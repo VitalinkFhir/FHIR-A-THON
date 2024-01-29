@@ -1,6 +1,6 @@
-#Pseudonymized Identifier
+# Pseudonymized Identifier
 
-##How to create a pseudonymized identifier
+## How to create a pseudonymized identifier
 - An eliptic curve (EC) point needs to be created from the identifier following the specs of the eHealth cookbook
 - The EC point needs to be blinded by moving the EC point by a random scalar
 - The point needs to be pseudonymized into the domain vitalink_v1 by calling the eHealth API for pseudonymization
@@ -10,8 +10,8 @@
 - The eHealth response needs to be updated with the newly unblinded coordinate.
 - The now unblinded eHealth response needs to be base64 encoded to use as the patient identifier in the calls to vitalink.
 
-##How to use a pseudonymized identifier
-###CREATE
+## How to use a pseudonymized identifier
+### CREATE
 - The patient resource needs an identifier with a system, value and extensions.
 - The system is mandatory and needs to be https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin
 - The value is the base 64 pseudonym in vitalink_v1 domain
@@ -39,7 +39,7 @@
 		}
 	},
 
-###SEARCH
+### SEARCH
 - A search URL needs to be constructed with the mandatory patient.identifier parameter
 - The presense of a system and a value is enforced
 - A correct example of a search URL is the following:
