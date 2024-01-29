@@ -18,6 +18,7 @@
 - The extension is necessary to mark the identifier as a pseudonym
 - This is an example of a correct patient resource JSON:
 
+```json
 "patient": {
 		"type": "Patient",
 		"identifier": {
@@ -38,6 +39,7 @@
 			}
 		}
 	},
+```
 
 ### SEARCH
 - A post request needs to be constructed with URL encoded parameters in the body
