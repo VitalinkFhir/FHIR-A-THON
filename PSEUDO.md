@@ -40,7 +40,12 @@
 	},
 
 ### SEARCH
-- A search URL needs to be constructed with the mandatory patient.identifier parameter
-- The presense of a system and a value is enforced
+- A post request needs to be constructed with URL encoded parameters in the body
+- The mandatory patient.identifier parameter needs to be present.
+- The presence of a system and a value is enforced in the parameters
 - A correct example of a search URL is the following:
+  https://apps-acpt.vitalink-services.be/vault/api/r4/AllergyIntolerance/_search
+- A correct example of the body would be:
+  patient.identifier: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin|{{BASE_64_VITALINK_PSEUDONYM}}"
+  
 https://apps-acpt.vitalink-services.be/vault/api/r4/AllergyIntolerance/_search?patient.identifier=https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin|{{BASE_64_VITALINK_PSEUDONYM}}
