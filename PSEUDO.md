@@ -7,7 +7,7 @@
 - The response of eHealth will be a pseudonym in transit which contains among other things x, y and transitInfo.
 - The x and y coordinates are base64 encoded. A new EC point needs to be created using these coordinates.
 - The new EC point can be unblinded using the previously generated random scalar.
-- The eHealth response needs to be updated with the newly unblinded coordinate.
+- The eHealth response needs to be updated with the newly unblinded coordinate encoded in base64.
 - The now unblinded eHealth response needs to be base64 encoded to use as the patient identifier in the calls to vitalink.
 
 ## How to use a pseudonymized identifier
