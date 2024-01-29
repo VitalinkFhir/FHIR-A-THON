@@ -47,5 +47,3 @@
   https://apps-acpt.vitalink-services.be/vault/api/r4/AllergyIntolerance/_search
 - A correct example of the body would be:
   patient.identifier: "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin|{{BASE_64_VITALINK_PSEUDONYM}}"
-  
-https://apps-acpt.vitalink-services.be/vault/api/r4/AllergyIntolerance/_search?patient.identifier=https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin|{{BASE_64_VITALINK_PSEUDONYM}}
